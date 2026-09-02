@@ -1,0 +1,18 @@
+{
+  "preset:SimSun.woff::14": {
+    "hash": "82ab7e42c41c99205124e6efa7c05ca23bf6ac2c",
+    "cFileName": "font_simsun_14.c"
+  },
+  "preset:SimSun.woff::16": {
+    "hash": "e052d1fe7b79613f367e217dc02af95e3568bd85",
+    "cFileName": "font_simsun_16.c"
+  },
+  "preset:SimSun.woff::18": {
+    "hash": "de5aa5139da1dbc349cbb347d9753b0250ea223f",
+    "cFileName": "font_simsun_18.c"
+  },
+  "preset:SimSun.woff::22": {
+    "hash": "7df05e4b388b916f7a291ed479d0c4c9167b0638",
+    "cFileName": "font_simsun_22.c"
+  }
+}
