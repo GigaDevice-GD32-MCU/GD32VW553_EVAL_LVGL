@@ -2,7 +2,7 @@
     \file    gd32vw55x_eclic.h
     \brief   definitions for the ECLIC(Enhancement Core-Local Interrupt Controller)
 
-    \version 2026-02-04, V1.6.0, firmware for GD32VW55x
+    \version 2026-08-15, V1.7.0, firmware for GD32VW55x
 */
 
 /*

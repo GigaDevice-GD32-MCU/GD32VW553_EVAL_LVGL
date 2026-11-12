@@ -39,7 +39,6 @@ OF SUCH DAMAGE.
 #include "lcd_driver.h"
 #include "lvgl.h"
 #include "lv_port_disp.h"
-#include "lv_demos.h"
 #include "ui_init.h"
 #include "gui_app.h"
 
@@ -62,7 +61,6 @@ systick_config();
     lv_port_disp_init();
 
     ui_init();
-    custom_init();
     gd_eval_key_init(KEY_TAMPER_WAKEUP, KEY_MODE_EXTI);
     gui_app_button_init();
 

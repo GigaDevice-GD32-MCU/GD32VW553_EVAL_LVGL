@@ -2,7 +2,7 @@
     \file    gd32vw55x_efuse.h
     \brief   definitions for the EFUSE
 
-    \version 2026-02-04, V1.6.0, firmware for GD32VW55x
+    \version 2026-08-15, V1.7.0, firmware for GD32VW55x
 */
 
 /*
@@ -102,7 +102,7 @@ OF SUCH DAMAGE.
 #define EFUSE_CS_OVBERIC                   BIT(26)                           /*!< clear bit for overstep boundary error interrupt flag */
 
 /* EFUSE_ADDR */
-#define EFUSE_ADDR_EFADDR                  BITS(0,5)                         /*!< read or write EFUSE data start address */
+#define EFUSE_ADDR_EFADDR                  BITS(0,6)                         /*!< read or write EFUSE data start address */
 #define EFUSE_ADDR_EFSIZE                  BITS(8,13)                        /*!< read or write EFUSE data size */
 
 /* EFUSE_CTL0 */

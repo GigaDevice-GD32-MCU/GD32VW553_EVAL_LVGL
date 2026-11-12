@@ -2,7 +2,7 @@
     \file    gd32vw55x_fmc.h
     \brief   definitions for the FMC
 
-    \version 2026-02-04, V1.6.0, firmware for GD32VW55x
+    \version 2026-08-15, V1.7.0, firmware for GD32VW55x
 */
 
 /*
@@ -155,7 +155,7 @@ OF SUCH DAMAGE.
 #define FMC_PID0_PID0                   BITS(0,31)                                       /*!< product ID 0 */
 
 /* FMC_PID1 */
-#define FMC_PID1_PID1                   BITS(0,15)                                       /*!< product ID 1 */
+#define FMC_PID1_PID1                   BITS(0,31)                                       /*!< product ID 1 */
 
 /* FMC_RFT0 */
 #define FMC_RFT0_PABIAST0               BITS(0,3)                                        /*!< the PA(Power Amplifier) bias coarse tune value */
