@@ -18,7 +18,7 @@
 					<folderInfo id="com.gigadevice.mbs.riscv.configuration.debug.465936301.692849143." name="/" resourcePath="">
 						<toolChain id="com.gigadevice.mbs.riscv.toolChain.elf.debug.403190988" name="GD RISC-V MCU Toolchain" secondaryOutputs="com.gigadevice.mbs.riscv.outputType.objcopy.bin;com.gigadevice.mbs.riscv.outputType.objdump.list;com.gigadevice.mbs.riscv.outputType.size;com.gigadevice.mbs.riscv.outputType.objcopy.hex" superClass="com.gigadevice.mbs.riscv.toolChain.elf.debug">
 							<option id="com.gigadevice.mbs.riscv.option.optimization.messageLength.994128577" name="Message length (-fmessage-length=0)" superClass="com.gigadevice.mbs.riscv.option.optimization.messageLength" useByScannerDiscovery="true"/>
-							<option id="com.gigadevice.mbs.riscv.option.optimization.allOptions.1083833750" name="All options" superClass="com.gigadevice.mbs.riscv.option.optimization.allOptions" useByScannerDiscovery="false" value="-Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections" valueType="string"/>
+							<option id="com.gigadevice.mbs.riscv.option.optimization.allOptions.1083833750" name="All options" superClass="com.gigadevice.mbs.riscv.option.optimization.allOptions" useByScannerDiscovery="false" value="-O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections" valueType="string"/>
 							<option id="com.gigadevice.mbs.riscv.option.optimization.signedChar.1495437587" name="Plain char is signed (-fsigned-char)" superClass="com.gigadevice.mbs.riscv.option.optimization.signedChar" useByScannerDiscovery="true"/>
 							<option id="com.gigadevice.mbs.riscv.option.optimization.functionSections.326092824" name="Function sections (-ffunction-sections)" superClass="com.gigadevice.mbs.riscv.option.optimization.functionSections" useByScannerDiscovery="true"/>
 							<option id="com.gigadevice.mbs.riscv.option.optimization.dataSections.1418887428" name="Data sections (-fdata-sections)" superClass="com.gigadevice.mbs.riscv.option.optimization.dataSections" useByScannerDiscovery="true"/>
@@ -37,7 +37,7 @@
 							<option id="com.gigadevice.mbs.riscv.option.targetProcessor.abi.integer.1566181959" name="Integer ABI" superClass="com.gigadevice.mbs.riscv.option.targetProcessor.abi.integer" useByScannerDiscovery="true" value="com.gigadevice.mbs.riscv.option.targetProcessor.abi.integer.default" valueType="enumerated"/>
 							<option id="com.gigadevice.mbs.riscv.option.targetProcessor.codeModel.1252188507" name="Code model" superClass="com.gigadevice.mbs.riscv.option.targetProcessor.codeModel" useByScannerDiscovery="true" value="com.gigadevice.mbs.riscv.option.targetProcessor.codeModel.any" valueType="enumerated"/>
 							<option id="com.gigadevice.mbs.riscv.option.targetProcessor.other.1885519227" name="Other target flags" superClass="com.gigadevice.mbs.riscv.option.targetProcessor.other" useByScannerDiscovery="true" value="-mabi=ilp32d" valueType="string"/>
-							<option id="com.gigadevice.mbs.riscv.option.optimization.level.464769705" name="Optimization Level" superClass="com.gigadevice.mbs.riscv.option.optimization.level" useByScannerDiscovery="true" value="com.gigadevice.mbs.option.toolSettings.optimization.level.size" valueType="enumerated"/>
+							<option id="com.gigadevice.mbs.riscv.option.optimization.level.464769705" name="Optimization Level" superClass="com.gigadevice.mbs.riscv.option.optimization.level" useByScannerDiscovery="true" value="com.gigadevice.mbs.option.toolSettings.optimization.level.none" valueType="enumerated"/>
 							<option id="com.gigadevice.mbs.riscv.option.toolChain.name.1922984440" name="%option.base.toolChain.name" superClass="com.gigadevice.mbs.riscv.option.toolChain.name" value="MCU RISC-V GCC" valueType="string"/>
 							<option id="com.gigadevice.mbs.riscv.option.toolChain.cpp.817761547" name="C++ Compiler" superClass="com.gigadevice.mbs.riscv.option.toolChain.cpp" value="riscv-none-embed-g++" valueType="string"/>
 							<option id="com.gigadevice.mbs.riscv.option.toolChain.ar.792728543" name="Archiver" superClass="com.gigadevice.mbs.riscv.option.toolChain.ar" value="riscv-none-embed-ar" valueType="string"/>
@@ -108,10 +108,10 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
-		<configuration configurationName="GD32VW55H_EVAL">
+		<configuration configurationName="GD32VW553xI">
 			<resource resourceType="PROJECT" workspacePath="/GD32VW553H_EVAL"/>
 		</configuration>
-		<configuration configurationName="GD32VW553xI">
+		<configuration configurationName="GD32VW55H_EVAL">
 			<resource resourceType="PROJECT" workspacePath="/GD32VW553H_EVAL"/>
 		</configuration>
 	</storageModule>

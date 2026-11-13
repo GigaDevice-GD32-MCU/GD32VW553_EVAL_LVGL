@@ -36,13 +36,13 @@ OF SUCH DAMAGE.
 /* Functions called from "custom code" actions are declared here to avoid implicit declaration */
 #include "gui_app.h"
 
-/* lv_obj_set_style_transform_zoom() takes 3 args (obj, value, selector) but LVGL's
+/* lv_obj_set_style_transform_scale() takes 3 args (obj, value, selector) but LVGL's
  * lv_anim_exec_xcb_t callback type only supports 2 (var, value); passing the raw
  * function directly to lv_anim_set_exec_cb() reads garbage for the missing selector.
  * This wrapper fixes the selector to LV_PART_MAIN | LV_STATE_DEFAULT. */
 static void gd32_anim_zoom_exec_cb(void *var, int32_t v)
 {
-    lv_obj_set_style_transform_zoom(var, v, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_transform_scale(var, v, LV_PART_MAIN | LV_STATE_DEFAULT);
 }
 
 /* Event callbacks for screen: screen */
@@ -52,7 +52,7 @@ void screen_ui_screen_Button_1_044e_clicked(lv_event_t *e)
     screen_t *scr = screen_get(&ui_manager);
     (void)scr;
     ui_ensure_screen_1();
-    lv_scr_load_anim(screen_1_get(&ui_manager)->obj, LV_SCR_LOAD_ANIM_NONE, 200, 0, true);
+    lv_screen_load_anim(screen_1_get(&ui_manager)->obj, LV_SCREEN_LOAD_ANIM_NONE, 200, 0, true);
 }
 
 void screen_ui_screen_Button_1_85d7_clicked(lv_event_t *e)
@@ -61,7 +61,7 @@ void screen_ui_screen_Button_1_85d7_clicked(lv_event_t *e)
     screen_t *scr = screen_get(&ui_manager);
     (void)scr;
     ui_ensure_screen_2();
-    lv_scr_load_anim(screen_2_get(&ui_manager)->obj, LV_SCR_LOAD_ANIM_NONE, 200, 0, true);
+    lv_screen_load_anim(screen_2_get(&ui_manager)->obj, LV_SCREEN_LOAD_ANIM_NONE, 200, 0, true);
 }
 
 /* Called after screen_create() to bind event handlers. */

@@ -41,12 +41,13 @@ LV_FONT_DECLARE(font_notosanscjksc_regular_14_b49ae336);
  * 0x3f (the project's configured Fallback Character) instead,
  * so unknown glyphs render as that character rather than the built-in placeholder box.
  *
- * Line-break control characters ('\n'/'\r') are deliberately excluded from the
- * fallback substitution: LVGL's label/dropdown draw loop includes the trailing
- * '\n' of each line in the glyph range it walks (see lv_draw_label.c), relying on
- * the normal "no glyph for this codepoint" outcome to silently skip it. If the
- * fallback were applied here too, every line break would render as a visible
- * fallback-character glyph (e.g. a stray '?' after every dropdown option).
+ * Line-break control characters ('\n'/'\r') are excluded from the substitution:
+ * the label draw loop walks the trailing '\n' of each line and relies on the normal
+ * "no glyph" outcome to skip it; substituting would draw a stray fallback glyph per line break.
+ *
+ * LVGL 9: the bitmap callback receives the glyph descriptor, and the real font's callback
+ * reads font->dsc through g_dsc->resolved_font. LVGL sets resolved_font to this wrapper
+ * (whose dsc is NULL), so it is pointed at the real font for the duration of the call.
  */
 static bool font_notosanscjksc_regular_14_b49ae336_fb3f_get_glyph_dsc(const lv_font_t * font, lv_font_glyph_dsc_t * dsc_out,
                                            uint32_t letter, uint32_t letter_next)
@@ -61,16 +62,14 @@ static bool font_notosanscjksc_regular_14_b49ae336_fb3f_get_glyph_dsc(const lv_f
     return font_notosanscjksc_regular_14_b49ae336.get_glyph_dsc(&font_notosanscjksc_regular_14_b49ae336, dsc_out, 63u, letter_next);
 }
 
-static const uint8_t * font_notosanscjksc_regular_14_b49ae336_fb3f_get_glyph_bitmap(const lv_font_t * font, uint32_t letter)
+static const void * font_notosanscjksc_regular_14_b49ae336_fb3f_get_glyph_bitmap(lv_font_glyph_dsc_t * g_dsc,
+                                                      lv_draw_buf_t * draw_buf)
 {
-    LV_UNUSED(font);
-    if (letter == '\n' || letter == '\r') {
-        return NULL;
-    }
-    lv_font_glyph_dsc_t dsc;
-    uint32_t resolved_letter =
-        font_notosanscjksc_regular_14_b49ae336.get_glyph_dsc(&font_notosanscjksc_regular_14_b49ae336, &dsc, letter, 0) ? letter : 63u;
-    return font_notosanscjksc_regular_14_b49ae336.get_glyph_bitmap(&font_notosanscjksc_regular_14_b49ae336, resolved_letter);
+    const lv_font_t * wrapper = g_dsc->resolved_font;
+    g_dsc->resolved_font = &font_notosanscjksc_regular_14_b49ae336;
+    const void * bitmap = font_notosanscjksc_regular_14_b49ae336.get_glyph_bitmap(g_dsc, draw_buf);
+    g_dsc->resolved_font = wrapper;
+    return bitmap;
 }
 
 const lv_font_t font_notosanscjksc_regular_14_b49ae336_fb3f = {
@@ -81,6 +80,8 @@ const lv_font_t font_notosanscjksc_regular_14_b49ae336_fb3f = {
     .subpx = 0,
     .underline_position = 0,
     .underline_thickness = 0,
+    .static_bitmap = 0,
     .dsc = NULL,
     .fallback = NULL,
+    .user_data = NULL,
 };
