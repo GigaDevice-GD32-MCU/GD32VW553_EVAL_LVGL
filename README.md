@@ -1,31 +1,75 @@
-# LVGL V8.3 ported to the GD32VW553H EVAL
+# LVGL Ported to GD32VW553H EVAL
 
-This project ports `LVGL V8.3.11` to the `GD32VW553H EVAL` platform for GUI demonstrations.
+## Overview
 
-## Hardware Information
+This project ports `LVGL` to the `GD32VW553H EVAL` evaluation board for GUI demonstrations.
 
-The `GD32VW553H Development Kit` is based on:
+The board features a `GD32VW553HM` microcontroller based on the `RISC-V` core ,
+along with a `320 x 240` TFT display.
+The project uses landscape orientation with the `RGB565` pixel format and 16-bit color depth.
 
-- `GD32VW553HMQ7` microcontroller (`RISC-V` core with FPU and DSP instructions, Wi-Fi 6 and BLE 5.2 connectivity)
-- `4 MB` on-chip Flash memory and `320 KB` on-chip SRAM 
-- `ILI9341` TFT display (`320 x 240`) driven over `SPI1` with DMA-based pixel streaming
-- LCD control pins: `PA12` (CS), `PB13` (RS/DC), `PB12` (RESET)
-- `USART0` virtual COM port for `printf` debug output
-- On-chip RTC, TRNG, CAU/HAU/PKCAU crypto accelerators and QSPI Flash interface
-- User LEDs, function keys, and universal expansion pin headers
+Project toolchains include `IAR` and `GD32EmbeddedBuilder`.
 
-## Project Information
+## Specification
 
-- GUI framework: `LVGL V8.3.11`
-- Toolchain: `IAR Embedded Workbench for RISC-V / GD32EmbeddedBuilder (Eclipse)`
-- Target board: `GD32VW553H EVAL V1.2`
-- Display configuration: `320 x 240 / RGB565 16-bit color / landscape`
-- Draw buffers: `two partial buffers of 320 x 120 pixels, flushed asynchronously by DMA`
+- **MCU:** GD32VW553HM (RISC-V, 160MHz)
+- **RAM:** 320KB internal SRAM
+- **Flash:** 4096KB internal
+- **GPU:** None
+- **Resolution:** 320*240
+- **Display Size:** 2.2 inch
+- **Interface:** SPI
+- **Color Depth:** 16-bit RGB565
+- **Technology:** a-Si TFT
+- **DPI:** 180 px/inch
+- **Touch Pad:** None
+
+## Getting Started
+
+The following steps describe a general workflow. Confirm the project paths, software versions,
+power supply requirements, and jumper settings against the actual project and the board manual.
+This project currently supports two integrated development environments (IDEs): IAR and GD32EmbeddedBuilder. This document uses GD32EmbeddedBuilder to demonstrate how to build, download, and debug the project.
+
+### Hardware Setup
+
+1. Confirm that the board model is `GD32VW553H EVAL`.
+2. Check the RGB display and resistive touch panel connections according to the board manual.
+3. Connect the on-board GDLINK debug interface to your PC, and configure the power supply and jumpers as required.
+
+### Software Setup
+
+1. Install `GD32EmbeddedBuilder` for your operating system. Refer to the GD32EmbeddedBuilder software requirements for details.
+2. Install the appropriate GDLink driver software and confirm that your PC recognizes the debugger.
+
+### Build the Project
+
+1. Clone this repository.
+```shell
+  git clone "Repository URL"
+  ```
+2. Open `GD32EmbeddedBuilder` and click **Browse...** to select a local directory as your workspace.
+3. Import the project by selecting **File > Import...** and choosing the project directory (`./Template/GD32EBuilder_project`).
+4. Build the project by right-clicking the project in the project explorer and selecting **Build Project**.
+5. To download and debug the project, right-click the project in the project explorer and select
+	**Debug As > Debug Configurations... > GDB General Debugging**. Configure the settings for your setup,
+	then click **Debug** to download the firmware and start debugging.
+
+### Debugging
+
+Start a debug session using your IDE and GDLink to set breakpoints, step through code, and inspect variables.
+If display or touch issues occur, first check peripheral initialization, display refresh, and touch input handling.
+The available debug options depend on your IDE and project configuration.
 
 ## Third-Party Components
 
-| Category   | In use | Component | Version    | License |
-| ---------- | ------ | --------- | ---------- | ------- |
-| GUI        | `Yes`  | `LVGL`    | `V 8.3.11` | `MIT`   |
+| Category | In Use | Component | Version | License |
+| --- | --- | --- | --- | --- |
+| GUI | Yes | `LVGL` | `V8.3.11` | `MIT` |
 
-> When adding a new third-party library, update this table accordingly and retain its license text and copyright notices.
+When adding a third-party library, update this table and retain its license text and copyright notices.
+
+## Contribution and Support
+
+If you find any issues with the development board feel free to open an Issue in this repository. For LVGL related issues (features, bugs, etc) please use the main [lvgl repository](https://github.com/lvgl/lvgl).
+
+If you found a bug and found a solution too please send a Pull request. If you are new to Pull requests refer to [Our Guide](https://docs.lvgl.io/master/CONTRIBUTING.html#pull-request) to learn the basics.

@@ -2,7 +2,7 @@
     \file    gd32vw55x_pmu.c
     \brief   PMU driver
 
-    \version 2026-02-04, V1.6.0, firmware for GD32VW55x
+    \version 2026-08-15, V1.7.0, firmware for GD32VW55x
 */
 
 /*
@@ -534,6 +534,9 @@ void pmu_interrupt_disable(uint32_t interrupt)
       \arg        PMU_INT_FLAG_BLE_POWER_RISE: BLE power status rising edge interrupt
     \param[out] none
     \retval     FlagStatus: SET or RESET
+    \note       After the interrupt enable bit is cleared, if the hardware flag remains set, this API will still return RESET.
+                Therefore, in an ISR or during the interrupt-disable flow, this API alone must not be relied upon to determine whether the flag should be cleared.
+                The corresponding flag must be cleared according to the module-specific rules, and the NVIC-pending bit should also be cleared when necessary.
 */
 FlagStatus pmu_interrupt_flag_get(uint32_t int_flag)
 {

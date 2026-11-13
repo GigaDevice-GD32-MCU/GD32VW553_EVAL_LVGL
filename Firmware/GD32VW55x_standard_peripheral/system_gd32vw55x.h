@@ -3,7 +3,7 @@
     \brief   RISC-V Device Peripheral Access Layer Header File for
              GD32VW55x Device Series
 
-    \version 2026-02-04, V1.6.0, firmware for GD32VW55x
+    \version 2026-08-15, V1.7.0, firmware for GD32VW55x
 */
 
 /*

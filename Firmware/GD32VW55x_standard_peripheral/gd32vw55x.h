@@ -2,7 +2,7 @@
     \file    gd32vw55x.h
     \brief   general definitions for GD32VW55x
 
-    \version 2026-02-04, V1.6.0, firmware for GD32VW55x
+    \version 2026-08-15, V1.7.0, firmware for GD32VW55x
 */
 
 /*
@@ -79,9 +79,9 @@
 #define LXTAL_VALUE  ((uint32_t)32768)
 #endif /* low speed crystal oscillator value */
 
-/* GD32VW55x firmware library version number V1.6.0 */
+/* GD32VW55x firmware library version number V1.7.0 */
 #define __GD32VW55X_STDPERIPH_VERSION_MAIN   (0x01) /*!< [31:24] main version */
-#define __GD32VW55X_STDPERIPH_VERSION_SUB1   (0x06) /*!< [23:16] sub1 version */
+#define __GD32VW55X_STDPERIPH_VERSION_SUB1   (0x07) /*!< [23:16] sub1 version */
 #define __GD32VW55X_STDPERIPH_VERSION_SUB2   (0x00) /*!< [15:8]  sub2 version */
 #define __GD32VW55X_STDPERIPH_VERSION_RC     (0x00) /*!< [7:0]  release candidate */
 #define __GD32VW55X_STDPERIPH_VERSION        ((__GD32VW55X_STDPERIPH_VERSION_MAIN << 24)\

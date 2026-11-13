@@ -19,21 +19,8 @@
 
 /* This file refers the RISC-V standard, some adjustments are made according to GigaDevice chips */
 
-#include "gd32vw55x.h"
-#include <stdio.h>
-#include <stdarg.h>
-
 int __wrap_printf(const char* fmt, ...)
 {
-    char buf[128];
-    va_list args;
-    va_start(args, fmt);
-    int len = vsnprintf(buf, sizeof(buf), fmt, args);
-    va_end(args);
-    for(int i = 0; i < len && i < (int)sizeof(buf); i++) {
-        while(RESET == usart_flag_get(USART0, USART_FLAG_TBE));
-        usart_data_transmit(USART0, (uint8_t)buf[i]);
-    }
-    return len;
+    // You can implement your own printf to reduce the code size, because the printf is really a big function
 }
 
