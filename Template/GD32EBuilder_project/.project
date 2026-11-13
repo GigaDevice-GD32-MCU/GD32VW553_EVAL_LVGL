@@ -160,14 +160,29 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/bsp_drive/lcd_driver.h</locationURI>
 		</link>
 		<link>
-			<name>lvgl/gifdec.c</name>
+			<name>lvgl/code128.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/gif/gifdec.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/libs/barcode/code128.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/decomp_raw.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/libs/frogfs/src/decomp_raw.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/frogfs.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/libs/frogfs/src/frogfs.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/gif.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/libs/gif/gif.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lodepng.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/png/lodepng.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/libs/lodepng/lodepng.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_anim.c</name>
@@ -180,19 +195,39 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_anim_timeline.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_animimg.c</name>
+			<name>lvgl/lv_animimage.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/animimg/lv_animimg.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/animimage/lv_animimage.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_animimage_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_animimage_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_arc.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_arc.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/arc/lv_arc.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_arc_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_arc_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_arclabel.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/arclabel/lv_arclabel.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_area.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_area.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_array.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_array.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_async.c</name>
@@ -202,7 +237,17 @@
 		<link>
 			<name>lvgl/lv_bar.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_bar.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/bar/lv_bar.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_bar_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_bar_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_barcode.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/barcode/lv_barcode.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_bidi.c</name>
@@ -210,49 +255,124 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_bidi.c</locationURI>
 		</link>
 		<link>
+			<name>lvgl/lv_bidi_common.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_bidi_common.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_bin_decoder.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/lv_bin_decoder.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_binfont_loader.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/binfont_loader/lv_binfont_loader.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_blend_arm2d.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/arm2d/lv_blend_arm2d.c</locationURI>
+		</link>
+		<link>
 			<name>lvgl/lv_bmp.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/bmp/lv_bmp.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/lv_bmp.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_btn.c</name>
+			<name>lvgl/lv_button.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_btn.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/button/lv_button.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_btnmatrix.c</name>
+			<name>lvgl/lv_buttonmatrix.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_btnmatrix.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/buttonmatrix/lv_buttonmatrix.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_buttonmatrix_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_buttonmatrix_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_cache.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/cache/lv_cache.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_cache_entry.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/cache/lv_cache_entry.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_cache_lru_ll.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/cache/class/lv_cache_lru_ll.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_cache_lru_rb.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/cache/class/lv_cache_lru_rb.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_cache_sc_da.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/cache/class/lv_cache_sc_da.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_calendar.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/calendar/lv_calendar.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/calendar/lv_calendar.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_calendar_chinese.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/calendar/lv_calendar_chinese.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_calendar_header_arrow.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/calendar/lv_calendar_header_arrow.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_calendar_header_dropdown.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/calendar/lv_calendar_header_dropdown.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_canvas.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_canvas.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/canvas/lv_canvas.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_chart.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/chart/lv_chart.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/chart/lv_chart.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_chart_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_chart_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_checkbox.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_checkbox.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/checkbox/lv_checkbox.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_checkbox_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_checkbox_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_circle_buf.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_circle_buf.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_cmsis_rtos2.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_cmsis_rtos2.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_color.c</name>
@@ -260,14 +380,14 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_color.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_colorwheel.c</name>
+			<name>lvgl/lv_color_op.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_color_op.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_disp.c</name>
+			<name>lvgl/lv_display.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_disp.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/display/lv_display.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_draw.c</name>
@@ -275,24 +395,49 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw.c</locationURI>
 		</link>
 		<link>
+			<name>lvgl/lv_draw_3d.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_3d.c</locationURI>
+		</link>
+		<link>
 			<name>lvgl/lv_draw_arc.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_arc.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_draw_img.c</name>
+			<name>lvgl/lv_draw_blur.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_img.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_blur.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_buf.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_buf.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_buf_convert.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/convert/lv_draw_buf_convert.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_buf_convert_helium.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/convert/helium/lv_draw_buf_convert_helium.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_buf_convert_neon.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/convert/neon/lv_draw_buf_convert_neon.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_image.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_image.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_draw_label.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_label.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_draw_layer.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_layer.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_draw_line.c</name>
@@ -322,27 +467,102 @@
 		<link>
 			<name>lvgl/lv_draw_sw_blend.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_blend.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_draw_sw_dither.c</name>
+			<name>lvgl/lv_draw_sw_blend_neon_to_rgb565.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_dither.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/neon/lv_draw_sw_blend_neon_to_rgb565.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_draw_sw_gradient.c</name>
+			<name>lvgl/lv_draw_sw_blend_neon_to_rgb888.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_gradient.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/neon/lv_draw_sw_blend_neon_to_rgb888.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_riscv_v_to_rgb888.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/riscv_v/lv_draw_sw_blend_riscv_v_to_rgb888.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_sve2_to_rgb888.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/sve2/lv_draw_sw_blend_sve2_to_rgb888.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_to_a8.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_a8.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_to_al88.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_al88.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_to_argb8888.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_to_argb8888_premultiplied.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_argb8888_premultiplied.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_to_i1.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_i1.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_to_l8.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_l8.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_to_rgb565.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_to_rgb565_swapped.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb565_swapped.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blend_to_rgb888.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/blend/lv_draw_sw_blend_to_rgb888.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_blur.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_blur.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_border.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_border.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_box_shadow.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_box_shadow.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_fill.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_fill.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_grad.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_grad.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_draw_sw_img.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_img.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_draw_sw_layer.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_layer.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_draw_sw_letter.c</name>
@@ -355,14 +575,14 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_line.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_draw_sw_polygon.c</name>
+			<name>lvgl/lv_draw_sw_mask.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_polygon.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_mask.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_draw_sw_rect.c</name>
+			<name>lvgl/lv_draw_sw_mask_rect.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_rect.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_mask_rect.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_draw_sw_transform.c</name>
@@ -370,9 +590,14 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_transform.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_draw_transform.c</name>
+			<name>lvgl/lv_draw_sw_triangle.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_transform.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_triangle.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_sw_vector.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/sw/lv_draw_sw_vector.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_draw_triangle.c</name>
@@ -380,29 +605,39 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_triangle.c</locationURI>
 		</link>
 		<link>
+			<name>lvgl/lv_draw_utils.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_utils.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_draw_vector.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_draw_vector.c</locationURI>
+		</link>
+		<link>
 			<name>lvgl/lv_dropdown.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_dropdown.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/dropdown/lv_dropdown.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_dropdown_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_dropdown_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_event.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_event.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_event.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_extra.c</name>
+			<name>lvgl/lv_file_explorer.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/lv_extra.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_ffmpeg.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/others/file_explorer/lv_file_explorer.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_flex.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/layouts/flex/lv_flex.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/layouts/flex/lv_flex.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_font.c</name>
@@ -417,12 +652,17 @@
 		<link>
 			<name>lvgl/lv_font_fmt_txt.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_fmt_txt.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/fmt_txt/lv_font_fmt_txt.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_font_loader.c</name>
+			<name>lvgl/lv_font_manager.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_loader.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/font_manager/lv_font_manager.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_font_manager_recycle.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/font_manager/lv_font_manager_recycle.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_font_montserrat_10.c</name>
@@ -435,14 +675,14 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_montserrat_12.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_font_montserrat_12_subpx.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_montserrat_12_subpx.c</locationURI>
-		</link>
-		<link>
 			<name>lvgl/lv_font_montserrat_14.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_montserrat_14.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_font_montserrat_14_aligned.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_montserrat_14_aligned.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_font_montserrat_16.c</name>
@@ -540,9 +780,14 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_montserrat_8.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_font_simsun_16_cjk.c</name>
+			<name>lvgl/lv_font_source_han_sans_sc_14_cjk.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_simsun_16_cjk.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_source_han_sans_sc_14_cjk.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_font_source_han_sans_sc_16_cjk.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/lv_font_source_han_sans_sc_16_cjk.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_font_unscii_16.c</name>
@@ -557,67 +802,82 @@
 		<link>
 			<name>lvgl/lv_fragment.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/others/fragment/lv_fragment.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/others/fragment/lv_fragment.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_fragment_manager.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/others/fragment/lv_fragment_manager.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/others/fragment/lv_fragment_manager.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_freetype.c</name>
+			<name>lvgl/lv_freertos.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/freetype/lv_freetype.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_freertos.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_fs.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_fs.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/fs/lv_fs.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_fs_fatfs.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/fs/lv_fs_fatfs.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_fs_frogfs.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/fs/lv_fs_frogfs.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_fs_littlefs.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/fsdrv/lv_fs_littlefs.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/fs/lv_fs_littlefs.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_fs_memfs.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/fs/lv_fs_memfs.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_fs_posix.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/fsdrv/lv_fs_posix.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/fs/lv_fs_posix.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_fs_stdio.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/fs/lv_fs_stdio.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_fs_uefi.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/fs/lv_fs_uefi.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_fs_win32.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/fsdrv/lv_fs_win32.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_gc.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_gc.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/fs/lv_fs_win32.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_gif.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/gif/lv_gif.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/gif/lv_gif.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_grad.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_grad.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_grid.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/layouts/grid/lv_grid.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/layouts/grid/lv_grid.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_gridnav.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/others/gridnav/lv_gridnav.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/indev/lv_gridnav.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_group.c</name>
@@ -625,89 +885,139 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_group.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_hal_disp.c</name>
+			<name>lvgl/lv_image.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/hal/lv_hal_disp.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/image/lv_image.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_hal_indev.c</name>
+			<name>lvgl/lv_image_cache.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/hal/lv_hal_indev.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/cache/instance/lv_image_cache.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_hal_tick.c</name>
+			<name>lvgl/lv_image_decoder.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/hal/lv_hal_tick.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/lv_image_decoder.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_image_header_cache.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/cache/instance/lv_image_header_cache.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_image_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_image_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_imagebutton.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/imagebutton/lv_imagebutton.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_ime_pinyin.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/others/ime/lv_ime_pinyin.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_img.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_img.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_img_buf.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_img_buf.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_img_cache.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_img_cache.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_img_decoder.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/lv_img_decoder.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_imgbtn.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/ime/lv_ime_pinyin.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_imgfont.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/others/imgfont/lv_imgfont.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/imgfont/lv_imgfont.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_indev.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_indev.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/indev/lv_indev.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_indev_gesture.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/indev/lv_indev_gesture.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_indev_scroll.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_indev_scroll.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/indev/lv_indev_scroll.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_init.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/lv_init.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_iter.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_iter.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_keyboard.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/keyboard/lv_keyboard.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/keyboard/lv_keyboard.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_keyboard_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_keyboard_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_label.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_label.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/label/lv_label.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_label_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_label_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_layout.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/layouts/lv_layout.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_led.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/led/lv_led.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/led/lv_led.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_led_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_led_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_libjpeg_turbo.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/lv_libjpeg_turbo.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_libpng.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/lv_libpng.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_libwebp.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/lv_libwebp.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_line.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_line.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/line/lv_line.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_line_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_line_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_linux.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_linux.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_list.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/list/lv_list.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/list/lv_list.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_ll.c</name>
@@ -715,9 +1025,14 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_ll.c</locationURI>
 		</link>
 		<link>
+			<name>lvgl/lv_lodepng.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/lv_lodepng.c</locationURI>
+		</link>
+		<link>
 			<name>lvgl/lv_log.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_log.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/logging/lv_log.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_lru.c</name>
@@ -730,34 +1045,49 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_math.c</locationURI>
 		</link>
 		<link>
+			<name>lvgl/lv_matrix.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_matrix.c</locationURI>
+		</link>
+		<link>
 			<name>lvgl/lv_mem.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_mem.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/stdlib/lv_mem.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_mem_core_builtin.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/stdlib/builtin/lv_mem_core_builtin.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_mem_core_clib.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/stdlib/clib/lv_mem_core_clib.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_menu.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/menu/lv_menu.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/menu/lv_menu.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_meter.c</name>
+			<name>lvgl/lv_menu_properties.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/meter/lv_meter.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_menu_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_monkey.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/others/monkey/lv_monkey.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/monkey/lv_monkey.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_msg.c</name>
+			<name>lvgl/lv_mqx.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/others/msg/lv_msg.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_mqx.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_msgbox.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/msgbox/lv_msgbox.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/msgbox/lv_msgbox.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_obj.c</name>
@@ -775,9 +1105,29 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_obj_draw.c</locationURI>
 		</link>
 		<link>
+			<name>lvgl/lv_obj_event.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_obj_event.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_obj_id_builtin.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_obj_id_builtin.c</locationURI>
+		</link>
+		<link>
 			<name>lvgl/lv_obj_pos.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_obj_pos.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_obj_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_obj_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_obj_property.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_obj_property.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_obj_scroll.c</name>
@@ -802,22 +1152,57 @@
 		<link>
 			<name>lvgl/lv_objx_templ.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_objx_templ.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/objx_templ/lv_objx_templ.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_png.c</name>
+			<name>lvgl/lv_observer.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/png/lv_png.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_observer.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_printf.c</name>
+			<name>lvgl/lv_os.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_printf.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_os.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_os_none.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_os_none.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_palette.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_palette.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_pending.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_pending.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_profiler_builtin.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/profiler/lv_profiler_builtin.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_profiler_builtin_posix.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/profiler/lv_profiler_builtin_posix.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_pthread.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_pthread.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_qrcode.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/qrcode/lv_qrcode.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/qrcode/lv_qrcode.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_rb.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_rb.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_refr.c</name>
@@ -825,44 +1210,104 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_refr.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_rlottie.c</name>
+			<name>lvgl/lv_rle.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/rlottie/lv_rlottie.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/libs/rle/lv_rle.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_roller.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_roller.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/roller/lv_roller.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_sjpg.c</name>
+			<name>lvgl/lv_roller_properties.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/sjpg/lv_sjpg.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_roller_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_rtthread.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_rtthread.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_scale.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/scale/lv_scale.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_scale_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_scale_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_sdl2.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_sdl2.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_slider.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_slider.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/slider/lv_slider.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_slider_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_slider_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_snapshot.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/others/snapshot/lv_snapshot.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/draw/snapshot/lv_snapshot.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_span.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/span/lv_span.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/span/lv_span.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_span_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_span_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_spinbox.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/spinbox/lv_spinbox.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/spinbox/lv_spinbox.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_spinbox_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_spinbox_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_spinner.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/spinner/lv_spinner.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/spinner/lv_spinner.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_spinner_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_spinner_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_sprintf_builtin.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/stdlib/builtin/lv_sprintf_builtin.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_sprintf_clib.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/stdlib/clib/lv_sprintf_clib.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_string_builtin.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/stdlib/builtin/lv_string_builtin.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_string_clib.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/stdlib/clib/lv_string_clib.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_style.c</name>
@@ -875,19 +1320,69 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_style_gen.c</locationURI>
 		</link>
 		<link>
+			<name>lvgl/lv_style_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_style_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_svg.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/svg/lv_svg.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_svg_decoder.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/svg/lv_svg_decoder.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_svg_parser.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/svg/lv_svg_parser.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_svg_render.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/svg/lv_svg_render.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_svg_token.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/svg/lv_svg_token.c</locationURI>
+		</link>
+		<link>
 			<name>lvgl/lv_switch.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_switch.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/switch/lv_switch.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_switch_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_switch_properties.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_sysmon.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/sysmon/lv_sysmon.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_table.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_table.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/table/lv_table.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_table_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_table_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_tabview.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/tabview/lv_tabview.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/tabview/lv_tabview.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_tabview_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_tabview_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_templ.c</name>
@@ -895,34 +1390,89 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_templ.c</locationURI>
 		</link>
 		<link>
+			<name>lvgl/lv_test_display.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/test/lv_test_display.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_test_display_egl.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/test/lv_test_display_egl.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_test_fs.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/test/lv_test_fs.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_test_helpers.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/test/lv_test_helpers.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_test_indev.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/test/lv_test_indev.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_test_indev_gesture.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/test/lv_test_indev_gesture.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_test_screenshot_compare.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/debugging/test/lv_test_screenshot_compare.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_text.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_text.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_text_ap.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_text_ap.c</locationURI>
+		</link>
+		<link>
 			<name>lvgl/lv_textarea.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/lv_textarea.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/textarea/lv_textarea.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_textarea_properties.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/property/lv_textarea_properties.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_theme.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/core/lv_theme.c</locationURI>
-		</link>
-		<link>
-			<name>lvgl/lv_theme_basic.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/themes/basic/lv_theme_basic.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/themes/lv_theme.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_theme_default.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/themes/default/lv_theme_default.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/themes/default/lv_theme_default.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_theme_mono.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/themes/mono/lv_theme_mono.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/themes/mono/lv_theme_mono.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_theme_simple.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/themes/simple/lv_theme_simple.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_tick.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/tick/lv_tick.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_tileview.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/tileview/lv_tileview.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/tileview/lv_tileview.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_timer.c</name>
@@ -932,22 +1482,27 @@
 		<link>
 			<name>lvgl/lv_tiny_ttf.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/tiny_ttf/lv_tiny_ttf.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/font/tiny_ttf/lv_tiny_ttf.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_tjpgd.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/image/lv_tjpgd.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_tlsf.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_tlsf.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/stdlib/builtin/lv_tlsf.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_txt.c</name>
+			<name>lvgl/lv_translation.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_txt.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/others/translation/lv_translation.c</locationURI>
 		</link>
 		<link>
-			<name>lvgl/lv_txt_ap.c</name>
+			<name>lvgl/lv_tree.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_txt_ap.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/misc/lv_tree.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/lv_utils.c</name>
@@ -957,17 +1512,27 @@
 		<link>
 			<name>lvgl/lv_win.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/widgets/win/lv_win.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/widgets/win/lv_win.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lv_windows.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/osal/lv_windows.c</locationURI>
+		</link>
+		<link>
+			<name>lvgl/lz4.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/libs/lz4/lz4.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/qrcodegen.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/qrcode/qrcodegen.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/libs/qrcode/qrcodegen.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl/tjpgd.c</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/extra/libs/sjpg/tjpgd.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Utilities/lvgl/lvgl/src/libs/tjpgd/tjpgd.c</locationURI>
 		</link>
 		<link>
 			<name>lvgl_port/lv_conf.h</name>
