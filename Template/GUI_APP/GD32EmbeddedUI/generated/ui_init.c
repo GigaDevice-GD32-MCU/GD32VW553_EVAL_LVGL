@@ -53,7 +53,7 @@ void ui_init(void)
     screen_create(&ui_manager);
     screen_1_create(&ui_manager);
     screen_2_create(&ui_manager);
-    lv_scr_load(ui_manager.screen.obj);
+    lv_screen_load(ui_manager.screen.obj);
 
     /* user-defined periodic refresh / init logic, see custom/gui_app.c */
     custom_init();

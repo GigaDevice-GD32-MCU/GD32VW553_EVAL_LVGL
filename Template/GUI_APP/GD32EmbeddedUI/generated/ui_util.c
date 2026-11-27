@@ -36,44 +36,27 @@ OF SUCH DAMAGE.
 
 bool screen_is_loading(lv_obj_t *scr)
 {
-#if LVGL_VERSION_MAJOR == 8
-    lv_obj_t *act_scr = lv_scr_act();
-    lv_disp_t *d = lv_obj_get_disp(scr);
-    if (d->prev_scr == NULL && (d->scr_to_load == NULL || d->scr_to_load == act_scr))
-        return false;
-    else
-        return true;
-#else
-    return false;
-#endif
+    /* lv_display_t fields are private in 9.x; prev screen is non-NULL while a screen-switch animation runs */
+    lv_display_t *disp = lv_obj_get_display(scr);
+    return lv_display_get_screen_prev(disp) != NULL;
 }
 
 void ui_style_init(lv_style_t *style)
 {
-    if (style->prop_cnt >= 1)
-        lv_style_reset(style);
-    else
+    if (lv_style_is_empty(style))
         lv_style_init(style);
+    else
+        lv_style_reset(style);
 }
 
 lv_font_t *ui_font_init(char *path, int size)
 {
-#if LVGL_VERSION_MAJOR == 8 && LV_USE_FREETYPE
-    static lv_ft_info_t info;
-    info.name = path;
-    info.weight = size;
-    info.style = FT_FONT_STYLE_NORMAL;
-    info.mem = NULL;
-    if (!lv_ft_font_init(&info))
-        return NULL;
-    return info.font;
-  #elif LV_USE_FREETYPE
-    lv_font_t *font = lv_freetype_font_create(path,
-                                              LV_FREETYPE_FONT_RENDER_MODE_BITMAP,
-                                              size,
-                                              LV_FREETYPE_FONT_STYLE_NORMAL);
-    return font;
-  #else
+#if LV_USE_FREETYPE
+    return lv_freetype_font_create(path,
+                                   LV_FREETYPE_FONT_RENDER_MODE_BITMAP,
+                                   size,
+                                   LV_FREETYPE_FONT_STYLE_NORMAL);
+#else
     (void)path;
     (void)size;
     return NULL;

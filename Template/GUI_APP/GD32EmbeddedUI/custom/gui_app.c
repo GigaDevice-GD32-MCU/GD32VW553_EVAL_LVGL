@@ -114,7 +114,7 @@ static void gui_app_gauge_timer_cb(lv_timer_t *timer)
 //     }
 
 //     if(lv_obj_has_flag(led, LV_OBJ_FLAG_HIDDEN)) {
-//         lv_obj_clear_flag(led, LV_OBJ_FLAG_HIDDEN);
+//         lv_obj_remove_flag(led, LV_OBJ_FLAG_HIDDEN);
 //     } else {
 //         lv_obj_add_flag(led, LV_OBJ_FLAG_HIDDEN);
 //     }
@@ -166,8 +166,8 @@ static void gui_app_clock_timer_cb(lv_timer_t *timer)
 static void gui_app_dropdown_select_next(void)
 {
     lv_obj_t *dropdown;
-    uint16_t option_cnt;
-    uint16_t selected;
+    uint32_t option_cnt;
+    uint32_t selected;
 
     ui_ensure_screen_1();
     dropdown = ui_manager.screen_1.ui_screen_1_Dropdown_1;
@@ -180,9 +180,9 @@ static void gui_app_dropdown_select_next(void)
         return;
     }
 
-    selected = (uint16_t)((lv_dropdown_get_selected(dropdown) + 1U) % option_cnt);
+    selected = (lv_dropdown_get_selected(dropdown) + 1U) % option_cnt;
     lv_dropdown_set_selected(dropdown, selected);
-    lv_event_send(dropdown, LV_EVENT_VALUE_CHANGED, NULL);
+    lv_obj_send_event(dropdown, LV_EVENT_VALUE_CHANGED, NULL);
 }
 
 void custom_init(void)
@@ -240,15 +240,15 @@ void gui_app_process_button(void)
 {
     if(current_page == GUI_PAGE_HOME) {
         ui_ensure_screen_1();
-        lv_scr_load(ui_manager.screen_1.obj);
+        lv_screen_load(ui_manager.screen_1.obj);
         current_page = GUI_PAGE_CONTROL;
     } else if(current_page == GUI_PAGE_CONTROL) {
         ui_ensure_screen_2();
-        lv_scr_load(ui_manager.screen_2.obj);
+        lv_screen_load(ui_manager.screen_2.obj);
         current_page = GUI_PAGE_SETTINGS;
     } else {
         ui_ensure_screen();
-        lv_scr_load(ui_manager.screen.obj);
+        lv_screen_load(ui_manager.screen.obj);
         current_page = GUI_PAGE_HOME;
     }
 }
