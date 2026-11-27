@@ -41,7 +41,7 @@ OF SUCH DAMAGE.
 #define UI_COLOR_DEPTH     16
 
 /* LVGL version */
-#define UI_LVGL_VERSION    "8.3.11"
+#define UI_LVGL_VERSION    "9.6.0"
 
 /* Screen list (updated by code generator) */
 /* UI_SCREEN_LIST_BEGIN */

@@ -45,7 +45,7 @@ extern ui_manager_t ui_manager;
 void ui_manager_init(ui_manager_t *ui, bool auto_del);
 void ui_init(void);
 
-/* Re-create a screen if it was destroyed by lv_scr_load_anim(auto_del = true). */
+/* Re-create a screen if it was destroyed by lv_screen_load_anim(auto_del = true). */
 void ui_ensure_screen(void);
 void ui_ensure_screen_1(void);
 void ui_ensure_screen_2(void);

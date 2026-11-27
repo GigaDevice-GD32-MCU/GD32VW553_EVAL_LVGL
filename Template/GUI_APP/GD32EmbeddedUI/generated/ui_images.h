@@ -45,7 +45,7 @@ extern "C" {
  * image has just one; UI_IMAGE_<NAME>_<W>X<H> picks a widget-sized variant explicitly.
  * Images stored as files have no C symbol and are not listed. */
 
-LV_IMG_DECLARE(img_20260805_153726_fit_44x44);
+LV_IMAGE_DECLARE(img_20260805_153726_fit_44x44);
 
 #define UI_IMAGE_20260805_153726 (&img_20260805_153726_fit_44x44)
 

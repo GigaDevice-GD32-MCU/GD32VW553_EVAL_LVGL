@@ -10,6 +10,30 @@ The project uses landscape orientation with the `RGB565` pixel format and 16-bit
 
 Project toolchains include `IAR` and `GD32EmbeddedBuilder`.
 
+## Benchmark
+
+The following benchmark results were obtained using LVGL 9.6.0 with double buffering.
+
+| Name                      | Avg. CPU | Avg. FPS | Avg. time | render time | flush time |
+|:------------------------- | --------:| --------:| ---------:| -----------:| ----------:|
+| Empty screen              | 88%      | 28       | 30        | 12          | 18         |
+| Moving wallpaper          | 97%      | 26       | 34        | 30          | 4          |
+| Single rectangle          | 19%      | 60       | 1         | <1          | 1          |
+| Multiple rectangles       | 95%      | 48       | 18        | 11          | 7          |
+| Multiple RGB images       | 30%      | 60       | 4         | 4           | <1         |
+| Multiple ARGB images      | 84%      | 54       | 16        | 16          | <1         |
+| Rotated ARGB images       | 99%      | 28       | 31        | 31          | <1         |
+| Multiple labels           | 99%      | 56       | 15        | 15          | <1         |
+| Screen sized text         | 100%     | 7        | 123       | 121         | 2          |
+| Multiple arcs             | 27%      | 60       | 1         | 1           | <1         |
+| Containers                | 44%      | 54       | 18        | 18          | <1         |
+| Containers with overlay   | 93%      | 21       | 42        | 40          | 2          |
+| Containers with opa       | 55%      | 52       | 20        | 20          | <1         |
+| Containers with opa_layer | 74%      | 34       | 35        | 34          | 1          |
+| Containers with scrolling | 98%      | 18       | 49        | 47          | 2          |
+| Widgets demo              | 99%      | 21       | 37        | 33          | 4          |
+| All scenes avg.           | 75%      | 39       | 29        | 27          | 2          |
+
 ## Specification
 
 - **MCU:** GD32VW553HM (RISC-V, 160MHz)
@@ -64,7 +88,7 @@ The available debug options depend on your IDE and project configuration.
 
 | Category | In Use | Component | Version | License |
 | --- | --- | --- | --- | --- |
-| GUI | Yes | `LVGL` | `V8.3.11` | `MIT` |
+| GUI | Yes | `LVGL` | `V9.6.0` | `MIT` |
 
 When adding a third-party library, update this table and retain its license text and copyright notices.
 
